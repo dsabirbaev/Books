@@ -14,6 +14,22 @@ const StyledFlex = styled.div `
     align-items: ${props => props.align || 'stretch'};
     justify-content:${props => props.justify || 'stretch'};
     column-gap: ${props => props.column || '0'};
+
+    input{
+        background-color: transparent;
+        border:none;
+        outline:none;
+        width: 264px;
+        color: #fff;
+        padding: 2px;
+        &::placeholder {
+            color: #FEFEFE;
+            font-size: 16px;
+            letter-spacing: 0.16px;
+            font-family: MulishRegular;
+        }
+    }
+    
     
 `
 const StyledFont = styled.p `
