@@ -1,5 +1,7 @@
 import styled from 'styled-components';
 
+
+
 const Nav = styled.nav `
     display:flex;
     justify-content:space-between;
@@ -8,7 +10,14 @@ const Nav = styled.nav `
   
 `
 
-const StyledFlex = styled.div `
+interface StyledFlexProps {
+    direction?: string;
+    align?: string;
+    justify?: string;
+    column?: string;
+}
+
+const StyledFlex = styled.div<StyledFlexProps>`
     display:flex;
     flex-direction: ${props => props.direction || 'row'};
     align-items: ${props => props.align || 'stretch'};
@@ -32,7 +41,14 @@ const StyledFlex = styled.div `
     
     
 `
-const StyledFont = styled.p `
+
+interface FontProps {
+    font?: string;
+    size?: string;
+    color?: string;
+    space?: string;
+}
+const StyledFont = styled.p<FontProps>`
     font-family: ${props => props.font || 'MulishRegular'};
     font-size: ${props => props.size || '14px'};
     color: ${props => props.color || '#fff'};
