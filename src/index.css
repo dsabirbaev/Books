@@ -16,6 +16,10 @@ ul {
 body {
     font-family: MulishRegular;
     overflow-x: hidden;
+    background-image: url(../src/assets/images/bg.png);
+    background-repeat: no-repeat;
+    background-size: 80%;
+    background-position: left top;
 }
 
 
