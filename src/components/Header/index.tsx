@@ -1,4 +1,4 @@
-
+import { Link } from "react-router-dom";
 import { logo, bell, search, user } from "../../assets/index";
 import {Nav, StyledFlex, StyledFont} from "./style.js";
 
@@ -9,7 +9,7 @@ const index = () => {
                 <Nav>
                     <StyledFlex align="center" column="24px">
                         <StyledFlex align="center" column="20px">
-                            <a href="#"><img src={logo} alt="logo" /></a>
+                            <Link to="/"><img src={logo} alt="logo" /></Link>
                             <StyledFont space="0.576px" font="MulishBold" size="18px"><span>Books</span> List</StyledFont>   
                         </StyledFlex>
                         <StyledFlex align="center" column="12px">
