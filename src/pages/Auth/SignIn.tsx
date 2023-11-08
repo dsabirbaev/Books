@@ -6,6 +6,8 @@ import { StyledFlex, Wrapper, LinkSocial, DivOr, Label, Button, Form, Info } fro
 import { facebook, google } from "../../assets/index";
 
 const SignIn = () => {
+
+    
     return (
         <StyledFlex align="center" justify="center">
             <Wrapper>
