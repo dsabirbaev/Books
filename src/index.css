@@ -20,8 +20,13 @@ body {
     background-repeat: no-repeat;
     background-size: 80%;
     background-position: left top;
+    background-color: #F8F8F8;
 }
 
+@font-face {
+    font-family: MulishLight;
+    src: url(./assets/fonts/Mulish/static/Mulish-Light.ttf);
+}
 
 @font-face {
     font-family: MulishRegular;
