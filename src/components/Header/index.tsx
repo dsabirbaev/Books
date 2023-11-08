@@ -1,8 +1,11 @@
 import { Link } from "react-router-dom";
 import { logo, bell, search, user } from "../../assets/index";
-import {Nav, StyledFlex, StyledFont} from "./style.js";
+import {Nav, StyledFlex, StyledFont, Login} from "./style.js";
 
 const index = () => {
+    const auth = true;
+
+
     return (
         <header>
             <div className="container">
@@ -19,7 +22,9 @@ const index = () => {
                     </StyledFlex>
                     <StyledFlex align="center" column="24px">
                         <img src={bell} alt="bell" />
-                        <img src={user} alt="user" />
+                        {
+                            auth ? <Link to="/signin"><Login>Sign In </Login></Link> : <img src={user} alt="user" />
+                        }
                     </StyledFlex>
 
                     

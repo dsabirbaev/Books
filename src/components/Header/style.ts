@@ -58,8 +58,22 @@ const StyledFont = styled.p<FontProps>`
     }
 `
 
+const Login = styled.a`
+    width: 120px;
+    padding: 5px 10px;
+    border-radius: 10px;
+    font-size: 16px;        
+    font-family: MulishMedium;
+    transition: all 0.3s ease;
+    &:hover{
+        background-color: #6200EE;
+        color: #fff;
+    }
+`
+
 export {
     Nav,
     StyledFlex,
-    StyledFont
+    StyledFont,
+    Login
 };

@@ -9,7 +9,7 @@ const SignIn = () => {
     return (
         <StyledFlex align="center" justify="center">
             <Wrapper>
-                <h2>Sign Up</h2>
+                <h2>Sign IN</h2>
                 <LinkSocial href="#">
                     <img src={google} alt="google" />
                     <span>Continue with Google</span>
@@ -46,7 +46,7 @@ const SignIn = () => {
                         SUBMIT
                     </Button>
 
-                    <Info>Already signed up? Go to <Link to="/signin">sign in</Link>.</Info>
+                    <Info>Already signed up? Go to <Link to="/signup">sign up</Link>.</Info>
                 </Form>
             </Wrapper>
         </StyledFlex>

@@ -7,7 +7,7 @@ const index = () => {
         <Wrapper>
             <img src={error} alt="error" />
             <BtnWrapper>
-                <Button><Link tp="/">Go Home Page</Link></Button>
+                <Button><Link to="/">Go Home Page</Link></Button>
                 <Button>Reload Page</Button>
             </BtnWrapper>
         </Wrapper>
